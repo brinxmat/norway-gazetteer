@@ -14,7 +14,7 @@
 :Baahus_len a gn:Feature ;
   a ng:Len ;
   rdfs:label "Baahus len" ;
-  foaf:label "Baahus len" ;
+  foaf:name "Baahus len" ;
   ng:existed [
     a time:Interval ; 
     time:hasBeginning "872"^^xsd:gYear ; 
@@ -24,7 +24,7 @@
 :Akershus_len a gn:Feature ;
   a ng:Len ;
   rdfs:label "Akershus len" ;
-  foaf:label "Akershus len" ;
+  foaf:name "Akershus len" ;
   ng:existed [
     a time:Interval ; 
     time:hasBeginning "872"^^xsd:gYear ; 
@@ -34,7 +34,7 @@
 :Bergenhus_len a gn:Feature ;
   a ng:Len ;
   rdfs:label "Bergenhus len" ;
-  foaf:label "Bergenhus len" ;
+  foaf:name "Bergenhus len" ;
   ng:existed [
     a time:Interval ; 
     time:hasBeginning "872"^^xsd:gYear ; 
@@ -44,9 +44,20 @@
 :Trondhjems_len a gn:Feature ;
   a ng:Len ;
   rdfs:label "Trondhjems len" ;
-  foaf:label "Trondhjems len" ;
+  foaf:name "Trondhjems len" ;
   ng:existed [
     a time:Interval ; 
     time:hasBeginning "872"^^xsd:gYear ; 
     time:hasEnd "1662"^^xsd:gYear 
   ] .
+  
+:Tonsberg_len a gn:Feature ;
+  a ng:Len ;
+  rdfs:label "Tønsberg len" ;
+  foaf:name "Tønsberg len" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1600"^^xsd:gYear ; #imprecise
+    time:hasEnd "1673"^^xsd:gYear
+  ] ;
+  ng:became :grevskap/
