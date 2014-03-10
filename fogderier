@@ -217,7 +217,36 @@
 	]
   ] ;
   ng:became :Ovre_Romerike_fogderi ;
-  ng:became :Solor_fogderi .
+  ng:became :Solor_fogderi_Akershus .
+
+
+:Solor_fogderi_Akershus a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Solør fogderi" ;
+  foaf:name "Solør fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1634"^^xsd:gYear ; 
+    time:hasEnd "1919"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1634"^^xsd:gYear ;
+		time:hasEnd "1661"^^xsd:gYear 
+	]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1662"^^xsd:gYear ;
+		time:hasEnd "1919"^^xsd:gYear 
+	]
+  ] .
 
 :Ovre_Romerike_fogderi a gn:Feature ;
   a ng:Fogderi ;
