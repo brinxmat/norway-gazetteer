@@ -22,7 +22,7 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn :Akershus_stiftamt ;
+    ng:containedIn amt:Akershus_stiftamt ;
     ng:existed [
 		a time:Interval ;
 		time:hasBeginning "1662"^^xsd:gYear ;
@@ -31,7 +31,7 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn :Buskerud_amt ;
+    ng:containedIn amt:Buskerud_amt ;
     ng:existed [
 		a time:Interval ;
 		time:hasBeginning "1760"^^xsd:gYear ;
