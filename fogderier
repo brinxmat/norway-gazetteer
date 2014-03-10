@@ -1,0 +1,40 @@
+@prefix : <http://www.ntnu.no/ub/data/gazetteer/fogderi/> .
+@prefix amt: <http://www.ntnu.no/ub/data/gazetteer/amt/> .
+@prefix len: <http://www.ntnu.no/ub/data/gazetteer/len/> .
+@prefix underlen: <http://www.ntnu.no/ub/data/gazetteer/underlen/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix ng: <http://www.ntnu.no/ub/data/ng/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Numedal_og_Sandsvaer_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Numedal og Sandsvær fogderi" ;
+  rdfs:label "Numedal og Sandsværs fogderi" ;
+  rdfs:label "Numedal fogderi" ;
+  foaf:name "Numedal og Sandsvær fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1662"^^xsd:gYear ; 
+    time:hasEnd "1900"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn :Akershus_stiftamt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1662"^^xsd:gYear ;
+		time:hasEnd "1759"^^xsd:gYear 
+	]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn :Buskerud_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1760"^^xsd:gYear ;
+		time:hasEnd "1900"^^xsd:gYear 
+	]
+  ] .
