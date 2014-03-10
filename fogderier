@@ -38,3 +38,243 @@
 		time:hasEnd "1900"^^xsd:gYear 
 	]
   ] .
+
+:Idd_og_Marker_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Idd og Marker fogderi" ;
+  rdfs:label "Idde og Markers fogderi" ;
+  foaf:name "Idd og Marker fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1662"^^xsd:gYear ; 
+    time:hasEnd "1912"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Smaalenenes_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1662"^^xsd:gYear ;
+		time:hasEnd "1912"^^xsd:gYear 
+	]
+  ] .  
+
+:Moss_og_Tune_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Moss og Tune fogderi" ;
+  rdfs:label "Moss og Tunes fogderi" ;
+  rdfs:label "Moss fogderi" ;
+  rdfs:label "Moss, Onsø, Tune og Vembe fogderi" ;
+  foaf:name "Moss og Tune fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1670"^^xsd:gYear ; 
+    time:hasEnd "1912"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Smaalenenes_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1670"^^xsd:gYear ;
+		time:hasEnd "1912"^^xsd:gYear 
+	]
+  ] .
+
+:Rakkestad_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Rakkestad fogderi" ;
+  rdfs:label "Rakkestads fogderi" ;
+  rdfs:label "Rakkestad, Heggen og Frøland fogderi" ;
+  foaf:name "Rakkestad fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1670"^^xsd:gYear ; 
+    time:hasEnd "1912"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Akershus_stiftamt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1670"^^xsd:gYear ;
+		time:hasEnd "1767"^^xsd:gYear 
+	]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Smaalenenes_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1768"^^xsd:gYear ;
+		time:hasEnd "1912"^^xsd:gYear 
+	]
+  ] .
+
+:Aggers_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Aggers fogderi" ;
+  rdfs:label "Aker fogderi" ;
+  foaf:name "Aggers fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1500"^^xsd:gYear ; 
+    time:hasEnd "1693"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1500"^^xsd:gYear ;
+		time:hasEnd "1693"^^xsd:gYear 
+	]
+  ] ;
+  ng:becamePartOf :Aker_og_Follo_fogderi .
+
+:Folloug_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Folloug fogderi" ;
+  rdfs:label "Follo fogderi" ;
+  foaf:name "Folloug fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1500"^^xsd:gYear ; 
+    time:hasEnd "1693"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1500"^^xsd:gYear ;
+		time:hasEnd "1693"^^xsd:gYear 
+	]
+  ] ;
+  ng:becamePartOf :Aker_og_Follo_fogderi .
+
+:Aker_og_Follo_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Aker og Follo fogderi" ;
+  rdfs:label "Aggers og Follo fogderi" ;
+  rdfs:label "Aggers og Folloug fogderi" ;
+  foaf:name "Aker og Follo fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1693"^^xsd:gYear ; 
+    time:hasEnd "1919"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Akershus_stiftamt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1693"^^xsd:gYear ;
+		time:hasEnd "1919"^^xsd:gYear 
+	]
+  ] .
+
+:Romerike_og_Solor_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Romerike og Solør fogderi" ;
+  rdfs:label "Romerige og Solør fogderi" ;
+  foaf:name "Romerike og Solør fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1500"^^xsd:gYear ; 
+    time:hasEnd "1605"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1500"^^xsd:gYear ;
+		time:hasEnd "1604"^^xsd:gYear 
+	]
+  ] ;
+  ng:became :Nedre_Romerike_fogderi ;
+  ng:became :Solor_og_Ovre_Romerikes_fogderi .
+
+:Solor_og_Ovre_Romerike_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Solør og Øvre Romerike fogderi" ;
+  rdfs:label "Solør og Øvre Romerikes fogderi" ;
+  rdfs:label "Solør og Øvre Romeriges fogderi" ;
+  foaf:name "Solør og Øvre Romerike fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1605"^^xsd:gYear ; 
+    time:hasEnd "1633"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1605"^^xsd:gYear ;
+		time:hasEnd "1633"^^xsd:gYear 
+	]
+  ] ;
+  ng:became :Ovre_Romerike_fogderi ;
+  ng:became :Solor_fogderi .
+
+:Ovre_Romerike_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Øvre Romerike fogderi" ;
+  rdfs:label "Øvre Romerikes fogderi" ;
+  rdfs:label "Øvre Romeriges fogderi" ;
+  foaf:name "Øvre Romerike fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1634"^^xsd:gYear ; 
+    time:hasEnd "1919"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1634"^^xsd:gYear ;
+		time:hasEnd "1661"^^xsd:gYear 
+	]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1662"^^xsd:gYear ;
+		time:hasEnd "1919"^^xsd:gYear 
+	]
+  ] .
+
+:Nedre_Romerike_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Nedre Romerike fogderi" ;
+  rdfs:label "Nedre Romerikes fogderi" ;
+  rdfs:label "Nedre Romeriges fogderi" ;
+  foaf:name "Nedre Romerike fogderi" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1634"^^xsd:gYear ; 
+    time:hasEnd "1919"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1605"^^xsd:gYear ;
+		time:hasEnd "1661"^^xsd:gYear 
+	]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1662"^^xsd:gYear ;
+		time:hasEnd "1919"^^xsd:gYear 
+	]
+  ] .
