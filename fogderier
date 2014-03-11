@@ -240,7 +240,7 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn len:Akershus_len ;
+    ng:containedIn amt:Akershus_amt ;
     ng:existed [
 		a time:Interval ;
 		time:hasBeginning "1662"^^xsd:gYear ;
@@ -270,7 +270,7 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn len:Akershus_len ;
+    ng:containedIn amt:Akershus_amt ;
     ng:existed [
 		a time:Interval ;
 		time:hasBeginning "1662"^^xsd:gYear ;
@@ -300,10 +300,233 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn len:Akershus_len ;
+    ng:containedIn amt:Akershus_amt ;
     ng:existed [
 		a time:Interval ;
 		time:hasBeginning "1662"^^xsd:gYear ;
 		time:hasEnd "1919"^^xsd:gYear 
 	]
   ] .
+
+:Hedemarken_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Hedemarken fogderi" ;
+  rdfs:label "Hedemarkens fogderi" ;
+  foaf:name "Hedemarken fogderi" ;
+  ng:existed 	[
+		a time:Interval ;
+		time:hasBeginning "1634"^^xsd:gYear ;
+		time:hasEnd "1901"^^xsd:gYear 
+	] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Akershus_stiftamt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1634"^^xsd:gYear ;
+		time:hasEnd "1661"^^xsd:gYear 
+	]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Oplandene_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1757"^^xsd:gYear ;
+		time:hasEnd "1780"^^xsd:gYear 
+	]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Hedemarken_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1781"^^xsd:gYear ;
+		time:hasEnd "1901"^^xsd:gYear 
+	]
+  ] .  
+
+:Solor_Osterdalen_og_Odalen_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Solør, Østerdalen og Odalen fogderi" ;
+  rdfs:label "Solør, Østerdalen og Odalens fogderi" ;
+  foaf:name "Solør, Østerdalen og Odalen fogderi" ;
+  ng:existed 	[
+	a time:Interval ;
+	time:hasBeginning "1665"^^xsd:gYear ;
+	time:hasEnd "1763"^^xsd:gYear 
+  ] ;  
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Akershus_stiftamt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1665"^^xsd:gYear ;
+		time:hasEnd "1756"^^xsd:gYear 
+	]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Oplandene_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1757"^^xsd:gYear ;
+		time:hasEnd "1762"^^xsd:gYear 
+	]
+  ] ;
+  ng:became :Solor_og_Odalen_fogderi ;
+  ng:became :Osterdalen_fogderi .
+
+:Solor_og_Odalen_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Solør og Odalen fogderi" ;
+  rdfs:label "Solør og Odalens fogderi" ;
+  rdfs:label "Solløer og Oudalens fogderi" ;
+  foaf:name "Solør og Odalen  fogderi" ;
+  ng:existed 	[
+	a time:Interval ;
+	time:hasBeginning "1763"^^xsd:gYear ;
+	time:hasEnd "1851"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Oplandene_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1763"^^xsd:gYear ;
+		time:hasEnd "1780"^^xsd:gYear 
+	]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Hedemarken_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1781"^^xsd:gYear ;
+		time:hasEnd "1851"^^xsd:gYear 
+	]
+  ] ;
+  ng:became :Vinger_og_Odalen_fogderi ;
+  ng:became :Solor_fogderi_Oplandene .
+
+:Vinger_og_Odalen_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Vinger og Odalen fogderi" ;
+  rdfs:label "Vinger og Odalens fogderi" ;
+  foaf:name "Vinger og Odalen fogderi" ;
+  ng:existed 	[
+	a time:Interval ;
+	time:hasBeginning "1852"^^xsd:gYear ;
+	time:hasEnd "1901"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Hedemarken_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1852"^^xsd:gYear ;
+		time:hasEnd "1901"^^xsd:gYear 
+	]
+  ] .
+
+:Solor_fogderi_Oplandene a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Solør fogderi" ;
+  rdfs:label "Solørs fodgeri" ;
+  foaf:name "Solør fogderi" ;
+  ng:existed 	[
+	a time:Interval ;
+	time:hasBeginning "1852"^^xsd:gYear ;
+	time:hasEnd "1901"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Hedemarken_amt ;
+    ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1852"^^xsd:gYear ;
+		time:hasEnd "1901"^^xsd:gYear 
+	]
+  ] .
+
+:Osterdalen_fogderi a gn:Feature ;
+a ng:Fogderi ;
+rdfs:label "Solør fogderi" ;
+rdfs:label "Solørs fodgeri" ;
+foaf:name "Solør fogderi" ;
+ng:existed 	[
+	a time:Interval ;
+	time:hasBeginning "1852"^^xsd:gYear ;
+	time:hasEnd "1901"^^xsd:gYear 
+] ;
+ng:isPartOf [ 
+  a ng:AdministrativeContainment ;
+  ng:containedIn amt:Hedemarken_amt ;
+  ng:existed [
+		a time:Interval ;
+		time:hasBeginning "1852"^^xsd:gYear ;
+		time:hasEnd "1901"^^xsd:gYear 
+	]
+] .
+
+:Gudbrandsdalen_fogderi a gn:Feature ;
+
+:Totens_og_Hadeland_fogderi a gn:Feature ;
+
+:Valder_fogderi a gn:Feature ;
+
+:Buskerud_fogderi a gn:Feature ;
+
+:Hallingdal_og_Ringerige_fogderi a gn:Feature ;
+
+:Nedre_Tellemarken_og_Bamble_fogderi a gn:Feature ;
+
+:Ovre_Tellemarken_fogderi a gn:Feature ;
+
+:Nedenaes_fogderi a gn:Feature ;
+
+:Raaboigdelauget_fodgeri a gn:Feature ;
+
+:Lister_fogderi a gn:Feature ;
+
+:Mandal_fogderi a gn:Feature ;
+
+:Iederen_og_Dalerne a gn:Feature ;
+
+:Ryfylke_fogderi a gn:Feature ;
+
+:Sondhordlehn_og_Hardanger_fogderi a gn:Feature ;
+
+:Nordhordlehns_og_Vosse_fogderi a gn:Feature ;
+
+:Yttre_og_Indre_Sogn_fogderi a gn:Feature ;
+
+:Nordfiord_og_Sondfiord a gn:Feature ;
+
+:Sondmoer_fogderi a gn:Feature ;
+
+:Romsdalens_fogderi a gn:Feature ;
+
+:Nordmoers_fogderi a gn:Feature ;
+
+:Fosens_fogderi a gn:Feature ;
+
+:Orke_og_Guledals_fogderi a gn:Feature ;
+
+:Strindens_og_Sælbo_fogderi a gn:Feature ;
+
+:Stor-_og_Værdals_fogderi a gn:Feature ;
+
+:Inderoens_fogderi a gn:Feature ;
+
+:Nummedals_fogderi a gn:Feature ;
+
+:Helgelands_fogderi a gn:Feature ;
+
+:Saltens_fogderi a gn:Feature ;
+
+:Loffodens,_Vesteraalens_og_Andenes_fogderi a gn:Feature ;
+
+:Tromsens_og_Seniens_fogderi a gn:Feature ;
+
+:Finmarkens_fogderi a gn:Feature ;
