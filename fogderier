@@ -449,25 +449,129 @@
 	]
   ] .
 
-:Osterdalen_fogderi a gn:Feature ;
-a ng:Fogderi ;
-rdfs:label "Solør fogderi" ;
-rdfs:label "Solørs fodgeri" ;
-foaf:name "Solør fogderi" ;
-ng:existed 	[
+:Hedemarken_og_Osterdalen_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Hedemarken og Østerdalen fogderi" ;
+  rdfs:label "Hedemarken og Østerdalens fogderi" ;
+  rdfs:label "Hedemarchens og Østerdalens fogderi"
+  foaf:name "Hedemarken og Østerdalen fogderi" ;
+  ng:existed 	[
 	a time:Interval ;
-	time:hasBeginning "1852"^^xsd:gYear ;
-	time:hasEnd "1901"^^xsd:gYear 
-] ;
-ng:isPartOf [ 
-  a ng:AdministrativeContainment ;
-  ng:containedIn amt:Hedemarken_amt ;
-  ng:existed [
-		a time:Interval ;
-		time:hasBeginning "1852"^^xsd:gYear ;
-		time:hasEnd "1901"^^xsd:gYear 
+	time:hasBeginning "1500"^^xsd:gYear ;
+	time:hasEnd "1633"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+	  a time:Interval ;
+	  time:hasBeginning "1500"^^xsd:gYear ;
+	  time:hasEnd "1633"^^xsd:gYear 
 	]
-] .
+  ] ;
+  ng:became :Hedemarken_fogderi ;
+  ng:became :Osterdalen_fogderi .
+
+:Osterdalen_fogderi_1 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Østerdalen fogderi" ;
+  rdfs:label "Østerdalens fodgeri" ;
+  foaf:name "Østerdalen fogderi" ;
+  ng:existed 	[
+	a time:Interval ;
+	time:hasBeginning "1634"^^xsd:gYear ;
+	time:hasEnd "1664"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+	  a time:Interval ;
+	  time:hasBeginning "1634"^^xsd:gYear ;
+	  time:hasEnd "1661"^^xsd:gYear 
+	] 
+  ]	;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Akershus_stiftamt ;
+    ng:existed [
+      a time:Interval ;
+      time:hasBeginning "1662"^^xsd:gYear ;
+     time:hasEnd "1664"^^xsd:gYear 
+    ] 
+  ] ;
+  ng:becamePartOf :Solor_Osterdalen_og_Odalen_fogderi .
+
+:Osterdalen_fogderi_2 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Østerdalen fogderi" ;
+  rdfs:label "Østerdalens fodgeri" ;
+  foaf:name "Østerdalen fogderi" ;
+  ng:existed 	[
+	a time:Interval ;
+	time:hasBeginning "1763"^^xsd:gYear ;
+	time:hasEnd "1858"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Oplandene_amt ;
+    ng:existed [
+	  a time:Interval ;
+	  time:hasBeginning "1763"^^xsd:gYear ;
+	  time:hasEnd "1780"^^xsd:gYear 
+	] 
+  ]	;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Hedemarken_amt ;
+    ng:existed [
+      a time:Interval ;
+      time:hasBeginning "1781"^^xsd:gYear ;
+     time:hasEnd "1858"^^xsd:gYear 
+    ] 
+  ] ;
+  ng:became :Nordre_Osterdalen_fogderi ;
+  ng:became :Sondre_Osterdalen_fogderi .
+
+:Nordre_Osterdalen_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Nordre Østerdalen fogderi" ;
+  rdfs:label "Nordre Østerdalens fodgeri" ;
+  foaf:name "Nordre Østerdalen fogderi" ;
+  ng:existed 	[
+	a time:Interval ;
+	time:hasBeginning "1859"^^xsd:gYear ;
+	time:hasEnd "1901"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Oplandene_amt ;
+    ng:existed [
+	  a time:Interval ;
+	  time:hasBeginning "1859"^^xsd:gYear ;
+	  time:hasEnd "1901"^^xsd:gYear 
+	] 
+  ]	.
+
+:Sondre_Osterdalen_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Søndre Østerdalen fogderi" ;
+  rdfs:label "Søndre Østerdalens fodgeri" ;
+  foaf:name "Søndre Østerdalen fogderi" ;
+  ng:existed 	[
+	a time:Interval ;
+	time:hasBeginning "1859"^^xsd:gYear ;
+	time:hasEnd "1901"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Oplandene_amt ;
+    ng:existed [
+	  a time:Interval ;
+	  time:hasBeginning "1859"^^xsd:gYear ;
+	  time:hasEnd "1901"^^xsd:gYear 
+	] 
+  ]	.
 
 :Gudbrandsdalen_fogderi a gn:Feature ;
 
