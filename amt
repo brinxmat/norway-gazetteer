@@ -1,0 +1,352 @@
+	@prefix ng: <http://www.ntnu.no/ub/data/geography#> .
+@prefix : <http://www.ntnu.no/ub/data/gazetteer/> .
+
+:Smaalenene_amt a gn:Feature ;
+  a ng:Amt ;
+  rdfs:label "Smaalenene" ;
+  rdfs:label "Smaalenenes amt" ;
+  foaf:name "Smaalenenes amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1671"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:hasPart :Aremark_herred ;
+  ng:hasPart :Askim_herred ;
+  ng:hasPart :Berg_herred ;
+  ng:hasPart :Borge_herred ;
+  ng:hasPart :Eidsberg_herred ;
+  ng:hasPart :Glemminge_herred ;
+  ng:hasPart :Hobøl_herred ;
+  ng:hasPart :Hvaler_herred ;
+  ng:hasPart :Id_herred ;
+  ng:hasPart :Moss_herred ;
+  ng:hasPart :Onsø_herred ;
+  ng:hasPart :Raade_herred ;
+  ng:hasPart :Rakkestad_herred ;
+  ng:hasPart :Rygge_herred ;
+  ng:hasPart :Rødenes_herred ;
+  ng:hasPart :Skiptvet_herred ;
+  ng:hasPart :Skjeberg_herred ;
+  ng:hasPart :Spydeberg_herred ;
+  ng:hasPart :Trøgstad_herred ;
+  ng:hasPart :Tune_herred ;
+  ng:hasPart :Vaaler_herred ;
+  ng:hasPart :Varteig_herred ;
+  ng:map <http://upload.wikimedia.org/wikipedia/commons/7/76/Kart_over_Smaalehnenes_Amt_%281878%29.jpg> ;
+  ng:became :Ostfold_fylke .
+
+:Smaalenene a gn:Feature ;
+  a ng:Underlen ;
+  ng:partOf :Akershus_len .
+
+:Akershus_amt a gn:Feature ;
+  rdfs:label "Akershus" ;
+  rdfs:label "Aggershuus amt" ;
+  rdfs:label "Akershus amt" ;
+  foaf:name "Akershus amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1682"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:historicallyPartOf :Akershus_len ;
+  ng:map <http://upload.wikimedia.org/wikipedia/commons/3/32/Kart_over_Akershus_Amt_%281875%29.jpg> ;
+  ng:became :Akershus_fylke ;
+  ng:became :Kristiania .
+
+
+:Kristiania_amt a gn:Feature ;
+  rdfs:label "Kristiania" ;
+  rdfs:label "Kristiania amt" ;
+  rdfs:label "Christiania amt" ;
+  rdfs:label "Christiania" ;
+  foaf:name "Kristiania amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1842"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:became :Oslo_fylke .
+
+:Hedemarkens_amt a gn:Feature ;
+  rdfs:label "Hedemarken" ; 
+  rdfs:label "Hedemarkens amt" ;
+  rdfs:label "Hedemarken amt" ;
+  foaf:name "Hedemarkens amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1781"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:became <http://dbpedia.org/resource/Hedmark> .
+
+
+:Kristians_amt a gn:Feature ;
+  rdfs:label "Kristians" ;
+  rdfs:label "Kristians amt" ;
+  foaf:name "Kristians amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1781"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:became <http://dbpedia.org/resource/oppland> .
+
+
+:Buskerud_amt a gn:Feature ;
+  rdfs:label "Buskerud" ; 
+  rdfs:label "Buskerud amt" ;
+  foaf:name "Buskerud amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1679"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:became <http://dbpedia.org/resource/Buskerud> .
+
+
+:Jarlsberg_og_Larvik_amt a gn:Feature ;
+  rdfs:label "Jarlsberg og Larvik" ; 
+  rdfs:label "Jarlsberg og Larvik amt" ;
+  rdfs:label "Jarlsberg og Larviks amt" ;
+  foaf:name "Jarlsberg og Larviks amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1821"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:became <http://dbpedia.org/resource/Vestfold> .
+
+
+:Bratsberg_amt a gn:Feature ;
+  rdfs:label "Bratsberg" ; 
+  rdfs:label "Bratsberg amt" ;
+  foaf:name "Bratsberg amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1662"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partialOverlapWith :Akershus_stiftamt ;
+  ng:partialOverlapWith :Christiansand_stiftamt ;
+  ng:became <http://dbpedia.org/resource/Telemark> .
+
+
+:Nedenes_amt a gn:Feature ;
+  rdfs:label "Nedenes" ;
+  rdfs:label "Nedenæs" ;
+  rdfs:label "Nedenæs amt" ;
+  rdfs:label "Nedenes og Raabyggelaget" ;
+  rdfs:label "Nedenes og Raabyggelaget amt" ;
+  rdfs:label "Nedenes amt" ;
+  foaf:name "Nedenes amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1662"^^xsd:gYear ; 
+    time:hasEnd "1682"^^xsd:gYear 
+  ] ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1815"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partOf :Christiansand_stiftamt ;
+  ng:became <http://dbpedia.org/resource/Aust-Agder> .
+
+
+:Lister_og_Mandal_amt a gn:Feature ;
+  rdfs:label "Lister og Mandal" ;
+  rdfs:label "Lister og Mandals amt" ;
+  foaf:name "Lister og Mandals amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1685"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ; 
+  ng:partOf :Christiansand_stiftamt ;
+  ng:map <http://upload.wikimedia.org/wikipedia/commons/f/f8/Kart_over_Lister_og_Mandals_Amt.jpg> ;
+  ng:became <http://dbpedia.org/resource/Vest-Agder> .
+
+
+:Stavanger_amt a gn:Feature ;
+  rdfs:label "Stavanger" ; 
+  rdfs:label "Stavanger amt" ;
+  foaf:name "Stavanger amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1662"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:map <http://upload.wikimedia.org/wikipedia/commons/8/88/Stavanger-amt.jpg> ;
+  ng:became <http://dbpedia.org/resource/Rogaland> .
+
+
+:Søndre_Bergenhus_amt a gn:Feature ;
+  rdfs:label "Søndre Bergenhus" ; 
+  rdfs:label "Søndre Bergenhus amt" ;
+  foaf:name "Søndre Bergenhus amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1763"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partialOverlapWith :Bergenhus_amt ;
+  ng:partOf :Bergenhus_stiftamt ;
+  ng:became <http://dbpedia.org/resource/Hordaland> .
+
+
+:Bergen_amt a gn:Feature ;
+  rdfs:label "Bergen" ; 
+  rdfs:label "Bergen amt" ;
+  foaf:name "Bergen amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1831"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partialOverlapWith :Søndre_Bergenhus_amt ;
+  ng:partOf :Bergenhus_stiftamt ;
+  ng:became :Bergen_fylke .
+
+:Bergen_fylke a gn:Feature ;
+  rdfs:label "Bergen" ;
+  rdfs:label "Bergen fylke" ;
+  foaf:name "Bergen fylke" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1919"^^xsd:gYear ; 
+    time:hasEnd "1971"^^xsd:gYear 
+  ] ;
+  ng:partialOverlapWith :Hordaland_fylke .
+
+:Hordaland_fylke a gn:Feature ;
+  rdfs:label "Hordaland fylke" ;
+  foaf:name "Hordaland fylke" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1919"^^xsd:gYear 
+  ] .
+
+:Nordre_Bergenhus_amt a gn:Feature ;
+  rdfs:label "Nordre Bergenhus" ; 
+  rdfs:label "Nordre Bergenhus amt" ;
+  foaf:name "Nordre Bergenhus amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1763"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partialOverlapWith :Bergenhus_amt ;
+  ng:became <http://dbpedia.org/resource/Sogn-og-Fjordane> .
+
+
+:Romsdal_amt a gn:Feature ;
+  rdfs:label "Romsdal" ; 
+  rdfs:label "Buskerud amt" ;
+  foaf:name "Buskerud amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1679"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:became <http://dbpedia.org/page/M%C3%B8re_og_Romsdal> .
+
+
+:Søndre_Trondhjem_amt a gn:Feature ;
+  rdfs:label "Søndre Trondhjem" ; 
+  rdfs:label "Søndre Trondhjem amt" ;
+  rdfs:label "Søndre Trondhjems amt" ;
+  foaf:name "Søndre Trondhjems amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1804"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partialOverlapWith :Trondhjems_amt ;
+  ng:became <http://dbpedia.org/page/S%C3%B8r-Tr%C3%B8ndelag> .
+
+:Trondhjems_amt a gn:Feature ;
+  rdfs:label "Trondhjems amt" ; 
+  foaf:name "Trondhjems amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1687"^^xsd:gYear ; 
+    time:hasEnd "1804"^^xsd:gYear 
+  ] ; 
+  ng:became :Søndre_Trondhjems_amt .
+
+:Nordre_Trondhjem_amt a gn:Feature ;
+  rdfs:label "Nordre Trondhjem" ; 
+  rdfs:label "Nordre Trondhjem amt" ;
+  rdfs:label "Nordre Trondhjems amt" ;
+  foaf:name "Nordre Trondhjems amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1804"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partialOverlapWith :Trondhjems_amt ;
+  ng:became :Nord_Trondelag_fylke .
+
+:Nordland_amt a gn:Feature ;
+  rdfs:label "Nordland" ; 
+  rdfs:label "Nordland amt" ;
+  rdfs:label "Nordlandenes amt" ;
+  rdfs:label "Nordlands amt" ;
+  foaf:name "Nordlands amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1668"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partialOverlapWith :Nordlandenes_len ;
+  ng:became :Nordland_fylke .
+
+:Nordlandenes_len a gn:Feature ;
+  rdfs:label "Nordlandenes len" ;
+  foaf:name "Nordlandenes len" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1604"^^xsd:gYear ;
+    time:hasEnd "1668"^^xsd:gYear 
+  ] ;
+  ng:partOf :Trondhjems_stiftamt ;
+  ng:became :Nordland_fylke .
+
+:Tromsø_amt a gn:Feature ;
+  rdfs:label "Tromsø" ; 
+  rdfs:label "Tromsø amt" ;
+  foaf:name "Tromsø amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1844"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partOf :Tromso_stiftamt ;
+  ng:became :Tromso_fylke .
+
+:Tromso_stiftamt a gn:Feature ;
+  rdfs:label "Tromsø stiftamt" ;
+  foaf:name "Tromsø stiftamt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1844"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:hasPart :Tromso_amt , :Finmarken_amt .
+
+:Finmarken_amt a gn:Feature ;
+  rdfs:label "Finmarken" ;
+  rdfs:label "Vardøhus amt" ;
+  rdfs:label "Finmarkens amt" ;
+  foaf:name "Finmarkens amt" ;
+  ng:existed [ 
+    a time:Interval ; 
+    time:hasBeginning "1668"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] ;
+  ng:partOf Tromso_stiftamt ;
+  ng:became :Finnmark_fylke .
+
+
