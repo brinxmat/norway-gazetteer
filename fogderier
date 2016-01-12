@@ -329,7 +329,7 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn amt:Oplandene_amt ;
+    ng:containedIn amt:Oplandenes_amt ;
     ng:existed [
 		a time:Interval ;
 		time:hasBeginning "1757"^^xsd:gYear ;
@@ -367,7 +367,7 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn amt:Oplandene_amt ;
+    ng:containedIn amt:Oplandenes_amt ;
     ng:existed [
 		a time:Interval ;
 		time:hasBeginning "1757"^^xsd:gYear ;
@@ -390,7 +390,7 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn amt:Oplandene_amt ;
+    ng:containedIn amt:Oplandenes_amt ;
     ng:existed [
 		a time:Interval ;
 		time:hasBeginning "1763"^^xsd:gYear ;
@@ -453,7 +453,7 @@
   a ng:Fogderi ;
   rdfs:label "Hedemarken og Østerdalen fogderi" ;
   rdfs:label "Hedemarken og Østerdalens fogderi" ;
-  rdfs:label "Hedemarchens og Østerdalens fogderi"
+  rdfs:label "Hedemarchens og Østerdalens fogderi" ;
   foaf:name "Hedemarken og Østerdalen fogderi" ;
   ng:existed 	[
 	a time:Interval ;
@@ -514,7 +514,7 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn amt:Oplandene_amt ;
+    ng:containedIn amt:Oplandenes_amt ;
     ng:existed [
 	  a time:Interval ;
 	  time:hasBeginning "1763"^^xsd:gYear ;
@@ -545,7 +545,7 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn amt:Oplandene_amt ;
+    ng:containedIn amt:Oplandenes_amt ;
     ng:existed [
 	  a time:Interval ;
 	  time:hasBeginning "1859"^^xsd:gYear ;
@@ -565,72 +565,257 @@
   ] ;
   ng:isPartOf [ 
     a ng:AdministrativeContainment ;
-    ng:containedIn amt:Oplandene_amt ;
+    ng:containedIn amt:Oplandenes_amt ;
     ng:existed [
 	  a time:Interval ;
 	  time:hasBeginning "1859"^^xsd:gYear ;
-	  time:hasEnd "1901"^^xsd:gYear 
+    time:hasEnd "1901"^^xsd:gYear 
 	] 
   ]	.
 
 :Gudbrandsdalen_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Gudbrandsdalen fogderi" ;
+  rdfs:label "Gudbrandsdalens fogderi" ;
+  rdfs:label "Gulbrandsdalen fogderi" ;
+  rdfs:label "Gulbrandsdalens fogderi" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1500"^^xsd:gYear ;
+    time:hasEnd "1860"^^xsd:gYear 
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1500"^^xsd:gYear ;
+    time:hasEnd "1661"^^xsd:gYear 
+  ]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Akershus_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1662"^^xsd:gYear ;
+    time:hasEnd "1756"^^xsd:gYear
+    ]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Oplandenes_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1757"^^xsd:gYear ;
+    time:hasEnd "1780"^^xsd:gYear
+    ]
+  ] ;
+  ng:isPartOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Kristians_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1781"^^xsd:gYear ;
+    time:hasEnd "1860"^^xsd:gYear 
+  ]
+  ] ;
+  ng:became :Nordre_Gudbrandsdalen_fogderi, :Soendre_Gudbrandsdalen_fogderi .
+
+:Nordre_Gudbrandsdalen_fogderi a gn:Feature ;
+  rdfs:label "Nordre Gudbrandsdalen fogderi" ;
+  rdfs:label "Nordre Gudbrandsdalens fogderi" ;
+  rdfs:label "Nordre Gulbrandsdalen fogderi" ;
+  rdfs:label "Nordre Gulbrandsdalens fogderi" ;
+  a ng:Fogderi ;
+  ng:containedIn amt:Kristians_amt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1860"^^xsd:gYear ;
+    time:hasEnd "1909"^^xsd:gYear 
+  ] .
+
+:Soendre_Gudbrandsdalen_fogderi a gn:Feature ;
+  rdfs:label "Søndre Gudbrandsdalen fogderi" ;
+  rdfs:label "Søndre Gudbrandsdalens fogderi" ;
+  rdfs:label "Søndre Gulbrandsdalen fogderi" ;
+  rdfs:label "Søndre Gulbrandsdalens fogderi" ;
+  a ng:Fogderi ;
+  ng:containedIn amt:Kristians_amt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1860"^^xsd:gYear ;
+    time:hasEnd "1909"^^xsd:gYear 
+  ] .
 
 :Totens_og_Hadeland_fogderi a gn:Feature ;
+  rdfs:label "Totens og Hadelands fogderi" ;
+  rdfs:label "Toten og Hadeland fogderi" ;
+  a ng:Fogderi ;
+  ng:containedIn amt::Kristians_amt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1860"^^xsd:gYear ;
+    time:hasEnd "1815"^^xsd:gYear 
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Oplandenes_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1764"^^xsd:gYear ;
+    time:hasEnd "1780"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Kristians_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1781"^^xsd:gYear ;
+    time:hasEnd "1815"^^xsd:gYear 
+  ]
+  ] ;
+  ng:became :Valdres_Land_og_Hadeland_fogderi, :Gudbrandsdalen_fogderi, :Toten_og_det_sydlige_Gudbrandsdal_fogderi .
+
+:Hadeland_og_Land_fogderi_1 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Hadeland og Land fogderi" ;
+  rdfs:label "Hadelands og Lands fogderi" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1856"^^xsd:gYear ;
+    time:hasEnd "1909"^^xsd:gYear 
+
+  ] .
+
+:Valdres_Land_og_Hadeland_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Valdres, Land og Hadeland fogderi" ;
+  rdfs:label "Valdres, Lands og Hadelands fogderi" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1815"^^xsd:gYear ;
+    time:hasEnd "1855"^^xsd:gYear ;    
+  ] ;
+  ng:became Hadeland_og_Land_fogderi_1 , :Valdres_fogderi .
+
+
+:Hadeland_fogderi_1 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Hadeland fogderi" ;
+  rdfs:label "Hadelands fogderi" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1500"^^xsd:gYear ;
+    time:hasEnd "1550"^^xsd:gYear ; #imprecise
+  ] ;
+  ng:partOf len:Akershus_len .
+
+:Hadeland_fogderi_2 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Hadeland fogderi" ;
+  rdfs:label "Hadelands fogderi" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1630"^^xsd:gYear ;
+    time:hasEnd "1635"^^xsd:gYear 
+  ] ;
+  ng:partOf len:Akershus_len .
+
+:Hadeland_Land_og_Valdres_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Hadeland, Land og Valdres fogderi" ;
+  rdfs:label "Hadelands, Lands og Valdres fogderi" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1550"^^xsd:gYear ;
+    time:hasEnd "1630"^^xsd:gYear
+  ] .
 
 :Valder_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Buskerud_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Hallingdal_og_Ringerige_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Nedre_Tellemarken_og_Bamble_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Ovre_Tellemarken_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Nedenaes_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Raaboigdelauget_fodgeri a gn:Feature ;
+  a ng:Fogderi .
 
 :Lister_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Mandal_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Iederen_og_Dalerne a gn:Feature ;
+  a ng:Fogderi .
 
 :Ryfylke_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Sondhordlehn_og_Hardanger_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Nordhordlehns_og_Vosse_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Yttre_og_Indre_Sogn_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Nordfiord_og_Sondfiord a gn:Feature ;
+  a ng:Fogderi .
 
 :Sondmoer_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Romsdalens_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Nordmoers_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Fosens_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Orke_og_Guledals_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Strindens_og_Sælbo_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Stor-_og_Værdals_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Inderoens_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Nummedals_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Helgelands_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Saltens_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
-:Loffodens,_Vesteraalens_og_Andenes_fogderi a gn:Feature ;
+:Loffodens_Vesteraalens_og_Andenes_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Tromsens_og_Seniens_fogderi a gn:Feature ;
+  a ng:Fogderi .
 
 :Finmarkens_fogderi a gn:Feature ;
+  a ng:Fogderi .

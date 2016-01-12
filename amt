@@ -1,5 +1,10 @@
-	@prefix ng: <http://www.ntnu.no/ub/data/geography#> .
+@prefix ng: <http://www.ntnu.no/ub/data/geography#> .
 @prefix : <http://www.ntnu.no/ub/data/gazetteer/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :Smaalenene_amt a gn:Feature ;
   a ng:Amt ;
@@ -74,11 +79,13 @@
   rdfs:label "Hedemarkens amt" ;
   rdfs:label "Hedemarken amt" ;
   foaf:name "Hedemarkens amt" ;
+  rdfs:label "Østre Oplandenes amt" ;
   ng:existed [ 
     a time:Interval ; 
     time:hasBeginning "1781"^^xsd:gYear ; 
     time:hasEnd "1918"^^xsd:gYear 
   ] ;
+  ng:partOf :Hamar_stift ;
   ng:became <http://dbpedia.org/resource/Hedmark> .
 
 
@@ -86,13 +93,22 @@
   rdfs:label "Kristians" ;
   rdfs:label "Kristians amt" ;
   foaf:name "Kristians amt" ;
+  rdfs:label "Vestre Oplandenes amt" ;
   ng:existed [ 
     a time:Interval ; 
     time:hasBeginning "1781"^^xsd:gYear ; 
     time:hasEnd "1918"^^xsd:gYear 
   ] ;
+  ng:partOf :Hamar_stift ;
   ng:became <http://dbpedia.org/resource/oppland> .
 
+:Hamar_stift a gn:Feature ;
+  a ng:Stift ;
+  rdfs:label "Hamar stift" ;
+  ng:existed [
+    a time:Interval ; 
+    time:hasBeginning "1864"^^xsd:gYear
+  ] .
 
 :Buskerud_amt a gn:Feature ;
   rdfs:label "Buskerud" ; 
@@ -346,7 +362,27 @@
     time:hasBeginning "1668"^^xsd:gYear ; 
     time:hasEnd "1918"^^xsd:gYear 
   ] ;
-  ng:partOf Tromso_stiftamt ;
+  ng:partOf :Tromso_stiftamt ;
   ng:became :Finnmark_fylke .
 
+:Oplandenes_amt a gn:Feature ;
+  rdfs:label "Oplandenes amt" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1757"^^xsd:gYear ; 
+    time:hasEnd "1781"^^xsd:gYear 
+  ] ;
+  ng:partOf :Akershus_stiftamt ;
+  ng:became :Kristians_amt, :Hedemarkens_amt .
 
+:Gudbrandsdalen_og_Hedemarkens_amt a gn:Feature ;
+  a ng:Amt ;
+  rdfs:label "Gudbrandsdalen og Hedemarkens amt" ;
+  rdfs:label "Gulbrandsdalen og Hedemarkens amt" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1687"^^xsd:gYear ; 
+    time:hasEnd "1692"^^xsd:gYear 
+  ] ;
+  ng:partOf :Akershus_stiftamt ;
+  ng:becamePartOf :Akershus_stiftamt .
