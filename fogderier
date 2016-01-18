@@ -723,6 +723,16 @@
   ] ;
   ng:partOf len:Akershus_len .
 
+:Hadeland_og_Valdres_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Hadeland og Valdres fogderi" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1637"^^xsd:gYear ;
+    time:hasEnd "1684"^^xsd:gYear
+  ] ;
+  ng:became :Hadeland_Toten_og_Valdres_fogderi .
+
 :Hadeland_Land_og_Valdres_fogderi a gn:Feature ;
   a ng:Fogderi ;
   rdfs:label "Hadeland, Land og Valdres fogderi" ;
@@ -733,10 +743,152 @@
     time:hasEnd "1630"^^xsd:gYear
   ] .
 
-:Valder_fogderi a gn:Feature ;
+:Valdres_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Valdres fogderi" ;
+  rdfs:label "Valders fogderi" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1764"^^xsd:gYear ;
+    time:hasEnd "1814"^^xsd:gYear
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Oplandenes_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1764"^^xsd:gYear ;
+    time:hasEnd "1781"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Kristians_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1781"^^xsd:gYear ;
+    time:hasEnd "1814"^^xsd:gYear 
+  ]
+  ] .
+
+:Buskerud_fogderi_1 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Buskerud fogderi" ;
+  rdfs:label "Buskeruds fogderi" ;
+  ng:partOf len:Akershus_len ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1550"^^xsd:gYear ;
+    time:hasEnd "1610"^^xsd:gYear ;
+  ] ;
+  ng:became :Bragenes_og_Buskerud_fogderi.
+
+:Buskerud_fogderi_2 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Buskerud fogderi" ;
+  rdfs:label "Buskeruds fogderi" ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1615"^^xsd:gYear ;
+    time:hasEnd "1661"^^xsd:gYear 
+  ]
+  ] ;
+    ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Akershus_stiftamt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1662"^^xsd:gYear ;
+    time:hasEnd "1678"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Buskerud_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1679"^^xsd:gYear ;
+    time:hasEnd "1909"^^xsd:gYear 
+  ]
+  ] .
+
+:Bragernes_og_Buskerud_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Bragernes og Buskerud fogderi" ;
+  rdfs:label "Bragernes og Buskeruds fogderi" ;
+   ng:partOf len:Akershus_len ;
+   ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1610"^^xsd:gYear ;
+    time:hasEnd "1615"^^xsd:gYear ] ;
+  ng:became :Buskerud_fogderi_2, :Bragernes_fogderi_2 . 
+
+:Bragernes_fogderi_1 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Bragernes fogderi" ;
+  ng:partOf len:Akershus_len ;
+  ng:existed [
+     a time:Interval ;
+    time:hasBeginning "1550"^^xsd:gYear ;
+    time:hasEnd "1610^^xsd:gYear
+  ] ;
+  ng:became :Bragernes_og_Buskerud_fogderi .
+
+:Bragernes_fogderi_2 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Bragernes fogderi" ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1615"^^xsd:gYear ;
+    time:hasEnd "1661"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Akershus_stiftamt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1662"^^xsd:gYear ;
+    time:hasEnd "1678"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Buskerud_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1679"^^xsd:gYear ;
+    time:hasEnd "1909"^^xsd:gYear 
+  ]
+  ] ;  
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1615"^^xsd:gYear ;
+    time:hasEnd "1909^^xsd:gYear
+  ] .
+
+:Hallingdal_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Hallingdal fogderi" ;
+  rdfs:label "Hallingdals fogderi" ;
+  ng:partOf len:Akershus_len ;
+  ng:existed [
+   a time:Interval ;
+    time:hasBeginning "1628"^^xsd:gYear ;
+    time:hasEnd "1635"^^xsd:gYear
+   ] ;
+  ng:became :Buskerud_og_Hallingdal_fogderi .
+
+:Hurum_og_Roeken_fogderi a gn:Feature ;
   a ng:Fogderi .
 
-:Buskerud_fogderi a gn:Feature ;
+:Eiker_og_Lier_fogderi a gn:Feature ;
   a ng:Fogderi .
 
 :Hallingdal_og_Ringerige_fogderi a gn:Feature ;

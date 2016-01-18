@@ -61,3 +61,6 @@
     time:hasEnd "1673"^^xsd:gYear
   ] ;
   ng:became :grevskap/
+
+:Bragernes_len a gn:Feature ;
+  a ng:Len .
