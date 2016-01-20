@@ -678,7 +678,7 @@
   ] ;
   ng:became :Valdres_Land_og_Hadeland_fogderi, :Gudbrandsdalen_fogderi, :Toten_og_det_sydlige_Gudbrandsdal_fogderi .
 
-:Hadeland_og_Land_fogderi_1 a gn:Feature ;
+:Hadeland_og_Land_fogderi a gn:Feature ;
   a ng:Fogderi ;
   rdfs:label "Hadeland og Land fogderi" ;
   rdfs:label "Hadelands og Lands fogderi" ;
@@ -705,6 +705,7 @@
   a ng:Fogderi ;
   rdfs:label "Hadeland fogderi" ;
   rdfs:label "Hadelands fogderi" ;
+  rdfs:label "Hadeland og Land fogderi" ;
   ng:existed [
     a time:Interval ;
     time:hasBeginning "1500"^^xsd:gYear ;
@@ -783,6 +784,30 @@
   ] ;
   ng:became :Bragenes_og_Buskerud_fogderi.
 
+:Buskerud_og_Ringerige_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Buskerud og Ringerige fogderi" ;
+  rdfs:label "Buskerud og Ringeriges fogderi" ;
+  ng:partOf len:Akershus_len ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1615"^^xsd:gYear ;
+    time:hasEnd "1635"^^xsd:gYear ;
+  ] .
+
+:Buskerud_og_Hallingdal_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Buskerud og Hallingdal fogderi" ;
+  rdfs:label "Buskerud og Hallingdals fogderi" ;
+  ng:partOf len:Akershus_len ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1636"^^xsd:gYear ;
+    time:hasEnd "1649"^^xsd:gYear ;
+  ] .
+
+
+
 :Buskerud_fogderi_2 a gn:Feature ;
   a ng:Fogderi ;
   rdfs:label "Buskerud fogderi" ;
@@ -811,7 +836,7 @@
     ng:existed [
     a time:Interval ;
     time:hasBeginning "1679"^^xsd:gYear ;
-    time:hasEnd "1909"^^xsd:gYear 
+    time:hasEnd "1900"^^xsd:gYear 
   ]
   ] .
 
@@ -886,24 +911,234 @@
   ng:became :Buskerud_og_Hallingdal_fogderi .
 
 :Hurum_og_Roeken_fogderi a gn:Feature ;
-  a ng:Fogderi .
+  a ng:Fogderi ;
+  rdfs:label "Hurum og Røken fogderi" ;
+  rdfs:label "Hurum og Røkens fogderi" ;
+  ng:partOf amt:Akershus_stiftamt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1664"^^xsd:gYear ;
+    time:hasEnd "1760"^^xsd:gYear
+  ] .
 
 :Eiker_og_Lier_fogderi a gn:Feature ;
-  a ng:Fogderi .
+  a ng:Fogderi ;
+  rdfs:label "Eiker og Lier fogderi" ;
+  rdfs:label "Eiker og Liers fogderi" ;
+  ng:partOf amt:Akershus_stiftamt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1664"^^xsd:gYear ;
+    time:hasEnd "1760"^^xsd:gYear
+  ] .
 
 :Hallingdal_og_Ringerige_fogderi a gn:Feature ;
-  a ng:Fogderi .
+  a ng:Fogderi ;
+  rdfs:label "Hallingdal og Ringerige fogderi" ;
+  rdfs:label "Hallingdal og Ringeriges fogderi" ;
+  rdfs:label "Hallingdal og Ringerike fogderi" ;
+  rdfs:label "Hallingdal og Ringerikes fogderi" ;
+  rdfs:label "Ringerige og Hallingdal fogderi" ;
+  rdfs:label "Ringeriges og Hallingdal fogderi" ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Akershus_len ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1650"^^xsd:gYear ;
+    time:hasEnd "1661"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Akershus_stiftamt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1662"^^xsd:gYear ;
+    time:hasEnd "1678"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Buskerud_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1679"^^xsd:gYear ;
+    time:hasEnd "1856"^^xsd:gYear 
+  ]
+  ] ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1650"^^xsd:gYear ;
+    time:hasEnd "1856"^^xsd:gYear
+  ] .
+
+:Tellemarken_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Telemarken fogderi" ;
+  rdfs:label "Telemarkens fogderi" ;
+  rdfs:label "Tellemarken fogderi" ;
+  rdfs:label "Tellebarkens fogderi" ;
+  rdfs:label "Tellemarchen fogderi" ;
+  rdfs:label "Tellemarchens fogderi"
+  ng:partOf amt:Bratsberg_amt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1500"^^xsd:gYear;
+    time:hasEnd "1745"^^xsd:gYear
+  ] ;
+  ng:became :Nedre_Tellemarken_og_Bamble_fogderi, Oevre_Tellemarken_fogderi .
+
+:Bamble_fogderi_1 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Bamble fogderi" ;
+  rdfs:label "Bambles fogderi" ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Bratsberg_len ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1500"^^xsd:gYear ;
+    time:hasEnd "1659"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Bratsberg_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1660"^^xsd:gYear ;
+    time:hasEnd "1679"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Nedenes_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1680"^^xsd:gYear ;
+    time:hasEnd "1684"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Bratsberg_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1685"^^xsd:gYear ;
+    time:hasEnd "1692"^^xsd:gYear 
+  ]
+  ] ;
+  ng:became :Tellemarken_fogderi .
 
 :Nedre_Tellemarken_og_Bamble_fogderi a gn:Feature ;
-  a ng:Fogderi .
+  a ng:Fogderi ;
+  rdfs:label "Nedre Tellemarken og Bamble fogderi" ;
+  rdfs:label "Nedre Tellemarken og Bambles fogderi" ;
+  rdfs:label "Nedre Telemarken og Bamble fogderi" ;
+  rdfs:label "Nedre Telemarken og Bambles fogderi" ;
+  rdfs:label "Nedre Tellemarchen og Bamble fogderi" ;
+  rdfs:label "Nedre Tellemarchen og Bambles fogderi" ;
+  ng:partOf amt:Bratsberg_amt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1745"^^xsd:gYear ;
+    time:hasEnd "1843"^^xsd:gYear ;
+  ] ;
+  ng:became :Tellemarken_fogderi_2, :Bamble_fogderi_2 .
 
-:Ovre_Tellemarken_fogderi a gn:Feature ;
-  a ng:Fogderi .
+:Nedre_Tellemarken_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Nedre Telemarken fogderi" ;
+  rdfs:label "Nedre Telemarkens fogderi" ;
+  rdfs:label "Nedre Tellemarken fogderi" ;
+  rdfs:label "Nedre Tellebarkens fogderi" ;
+  rdfs:label "Nedre Tellemarchen fogderi" ;
+  rdfs:label "Nedre Tellemarchens fogderi" ;
+  ng:partOf amt:Bratsberg_amt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1843"^^xsd:gYear;
+    time:hasEnd "1898"^^xsd:gYear
+  ] .
+
+:Bamble_fogderi_2 a gn:Feature ;
+  a ng:Fogderi ;
+  rdfs:label "Bamble fogderi" ;
+  rdfs:label "Bambles fogderi" ;
+  ng:partOf amt:Bratsberg_amt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1843"^^xsd:gYear ;
+    time:hasEnd "1898"^^xsd:gYear 
+  ] .
+
+:Oevre_Tellemarken_fogderi a gn:Feature ;
+  a ng:Fogderi ;
+  ng:map <https://no.wikipedia.org/wiki/%C3%98vre_Telemarken_fogderi#/media/File:O-tellemark-fogderi.jpg> ;
+  rdfs:label "Øvre Telemarken fogderi" ;
+  rdfs:label "Øvre Telemarkens fogderi" ;
+  rdfs:label "Øvre Tellemarken fogderi" ;
+  rdfs:label "Øvre Tellebarkens fogderi" ;
+  rdfs:label "Øvre Tellemarchen fogderi" ;
+  rdfs:label "Øvre Tellemarchens fogderi" ;
+  ng:partOf amt:Bratsberg_amt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1745"^^xsd:gYear ;
+    time:hasEnd "1898"^^xsd:gYear 
+  ] .
 
 :Nedenaes_fogderi a gn:Feature ;
-  a ng:Fogderi .
+  a ng:Fogderi ;
+  ng:map <https://no.wikipedia.org/wiki/Fil:Nedenes-fogderi.jpg>
+  rdfs:label "Nedenæs fogderi" ;
+  ng:partOf amt:Nedenes_amt ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1665"^^xsd:gYear ;
+    time:hasEnd "1919"^^xsd:gYear 
+  ] .
 
 :Raaboigdelauget_fodgeri a gn:Feature ;
+  a ng:Fogderi ;
+  ng:fil <https://no.wikipedia.org/wiki/Raabyggelaget#/media/File:Raabygdelagets-fogderi.jpg> ;
+  rdfs:label "Raabyggelaget fogderi" ;
+  rdfs:label "Raabyggelagets fogderi" ;
+  rdfs:label "Raabygdelaget fogderi" ;
+  rdfs:label "Raabøigdelauget fogderi" ;
+  rdfs:label "Raabyggelauget fogderi" ;
+  rdfs:label "Robyggjalogets fogderi" ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn len:Agdesiden_len ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1500"^^xsd:gYear ;
+    time:hasEnd "1681"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Christiansand_stift ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1682^^xsd:gYear ;
+    time:hasEnd "1683"^^xsd:gYear 
+  ]
+  ] ;
+  ng:partOf [ 
+    a ng:AdministrativeContainment ;
+    ng:containedIn amt:Nedenes_amt ;
+    ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1684"^^xsd:gYear ;
+    time:hasEnd "1865"^^xsd:gYear 
+  ]
+  ] ;
+  ng:became :Nedenaes_fogderi, :Saetersdalen_fogderi .
+
+:Saetersdalen_fogderi a gn:Feature ;
   a ng:Fogderi .
 
 :Lister_fogderi a gn:Feature ;

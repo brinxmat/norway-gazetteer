@@ -46,6 +46,7 @@
   ng:partOf :Akershus_len .
 
 :Akershus_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Akershus" ;
   rdfs:label "Aggershuus amt" ;
   rdfs:label "Akershus amt" ;
@@ -62,6 +63,7 @@
 
 
 :Kristiania_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Kristiania" ;
   rdfs:label "Kristiania amt" ;
   rdfs:label "Christiania amt" ;
@@ -75,6 +77,7 @@
   ng:became :Oslo_fylke .
 
 :Hedemarkens_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Hedemarken" ; 
   rdfs:label "Hedemarkens amt" ;
   rdfs:label "Hedemarken amt" ;
@@ -90,6 +93,7 @@
 
 
 :Kristians_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Kristians" ;
   rdfs:label "Kristians amt" ;
   foaf:name "Kristians amt" ;
@@ -111,6 +115,7 @@
   ] .
 
 :Buskerud_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Buskerud" ; 
   rdfs:label "Buskerud amt" ;
   foaf:name "Buskerud amt" ;
@@ -123,6 +128,7 @@
 
 
 :Jarlsberg_og_Larvik_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Jarlsberg og Larvik" ; 
   rdfs:label "Jarlsberg og Larvik amt" ;
   rdfs:label "Jarlsberg og Larviks amt" ;
@@ -136,6 +142,7 @@
 
 
 :Bratsberg_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Bratsberg" ; 
   rdfs:label "Bratsberg amt" ;
   foaf:name "Bratsberg amt" ;
@@ -150,6 +157,7 @@
 
 
 :Nedenes_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Nedenes" ;
   rdfs:label "Nedenæs" ;
   rdfs:label "Nedenæs amt" ;
@@ -172,6 +180,7 @@
 
 
 :Lister_og_Mandal_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Lister og Mandal" ;
   rdfs:label "Lister og Mandals amt" ;
   foaf:name "Lister og Mandals amt" ;
@@ -186,6 +195,7 @@
 
 
 :Stavanger_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Stavanger" ; 
   rdfs:label "Stavanger amt" ;
   foaf:name "Stavanger amt" ;
@@ -199,6 +209,7 @@
 
 
 :Søndre_Bergenhus_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Søndre Bergenhus" ; 
   rdfs:label "Søndre Bergenhus amt" ;
   foaf:name "Søndre Bergenhus amt" ;
@@ -213,6 +224,7 @@
 
 
 :Bergen_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Bergen" ; 
   rdfs:label "Bergen amt" ;
   foaf:name "Bergen amt" ;
@@ -226,6 +238,7 @@
   ng:became :Bergen_fylke .
 
 :Bergen_fylke a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Bergen" ;
   rdfs:label "Bergen fylke" ;
   foaf:name "Bergen fylke" ;
@@ -237,6 +250,7 @@
   ng:partialOverlapWith :Hordaland_fylke .
 
 :Hordaland_fylke a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Hordaland fylke" ;
   foaf:name "Hordaland fylke" ;
   ng:existed [ 
@@ -245,6 +259,7 @@
   ] .
 
 :Nordre_Bergenhus_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Nordre Bergenhus" ; 
   rdfs:label "Nordre Bergenhus amt" ;
   foaf:name "Nordre Bergenhus amt" ;
@@ -258,6 +273,7 @@
 
 
 :Romsdal_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Romsdal" ; 
   rdfs:label "Buskerud amt" ;
   foaf:name "Buskerud amt" ;
@@ -270,6 +286,7 @@
 
 
 :Søndre_Trondhjem_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Søndre Trondhjem" ; 
   rdfs:label "Søndre Trondhjem amt" ;
   rdfs:label "Søndre Trondhjems amt" ;
@@ -283,6 +300,7 @@
   ng:became <http://dbpedia.org/page/S%C3%B8r-Tr%C3%B8ndelag> .
 
 :Trondhjems_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Trondhjems amt" ; 
   foaf:name "Trondhjems amt" ;
   ng:existed [ 
@@ -293,6 +311,7 @@
   ng:became :Søndre_Trondhjems_amt .
 
 :Nordre_Trondhjem_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Nordre Trondhjem" ; 
   rdfs:label "Nordre Trondhjem amt" ;
   rdfs:label "Nordre Trondhjems amt" ;
@@ -306,6 +325,7 @@
   ng:became :Nord_Trondelag_fylke .
 
 :Nordland_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Nordland" ; 
   rdfs:label "Nordland amt" ;
   rdfs:label "Nordlandenes amt" ;
@@ -316,21 +336,11 @@
     time:hasBeginning "1668"^^xsd:gYear ; 
     time:hasEnd "1918"^^xsd:gYear 
   ] ;
-  ng:partialOverlapWith :Nordlandenes_len ;
+  ng:partialOverlapWith len:Nordlandenes_len ;
   ng:became :Nordland_fylke .
 
-:Nordlandenes_len a gn:Feature ;
-  rdfs:label "Nordlandenes len" ;
-  foaf:name "Nordlandenes len" ;
-  ng:existed [
-    a time:Interval ;
-    time:hasBeginning "1604"^^xsd:gYear ;
-    time:hasEnd "1668"^^xsd:gYear 
-  ] ;
-  ng:partOf :Trondhjems_stiftamt ;
-  ng:became :Nordland_fylke .
-
-:Tromsø_amt a gn:Feature ;
+:Tromso_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Tromsø" ; 
   rdfs:label "Tromsø amt" ;
   foaf:name "Tromsø amt" ;
@@ -343,6 +353,7 @@
   ng:became :Tromso_fylke .
 
 :Tromso_stiftamt a gn:Feature ;
+  a ng:Stiftamt ;
   rdfs:label "Tromsø stiftamt" ;
   foaf:name "Tromsø stiftamt" ;
   ng:existed [ 
@@ -353,6 +364,7 @@
   ng:hasPart :Tromso_amt , :Finmarken_amt .
 
 :Finmarken_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Finmarken" ;
   rdfs:label "Vardøhus amt" ;
   rdfs:label "Finmarkens amt" ;
@@ -366,6 +378,7 @@
   ng:became :Finnmark_fylke .
 
 :Oplandenes_amt a gn:Feature ;
+  a ng:Amt ;
   rdfs:label "Oplandenes amt" ;
   ng:existed [
     a time:Interval ;
@@ -386,3 +399,24 @@
   ] ;
   ng:partOf :Akershus_stiftamt ;
   ng:becamePartOf :Akershus_stiftamt .
+
+:Agdesiden_len a gn:Feature ;
+  a ng:Amt ;
+  rdfs:label "Agdesiden len" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1662"^^xsd:gYear ; 
+    time:hasEnd "1682"^^xsd:gYear 
+  ] ;
+  ng:partOf :Stavanger_amt ;
+  ng:became :Christiansands_stiftamt .
+
+:Christiansand_stiftamt a gn:Feature ;
+  a ng:Stiftamt ;
+  rdfs:label "Christiansand stiftamt" ;
+  rdfs:label "Christiansands stiftamt" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1682"^^xsd:gYear ; 
+    time:hasEnd "1918"^^xsd:gYear 
+  ] .

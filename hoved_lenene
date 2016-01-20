@@ -64,3 +64,25 @@
 
 :Bragernes_len a gn:Feature ;
   a ng:Len .
+
+:Agdesiden_len a gn:Feature ;
+  a ng:Amt ;
+  rdfs:label "Agdesiden len" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1500"^^xsd:gYear ; 
+    time:hasEnd "1661"^^xsd:gYear 
+  ] ;
+  ng:became amt:Agdesiden_amt .
+
+:Nordlandenes_len a gn:Feature ;
+  a ng:Len ;
+  rdfs:label "Nordlandenes len" ;
+  foaf:name "Nordlandenes len" ;
+  ng:existed [
+    a time:Interval ;
+    time:hasBeginning "1604"^^xsd:gYear ;
+    time:hasEnd "1668"^^xsd:gYear 
+  ] ;
+  ng:partOf amt:Trondhjems_stiftamt ;
+  ng:became :Nordland_fylke .
